@@ -17,7 +17,6 @@ export class ArabicToRomanService {
     
     let arabicconversor = arabicNumber;
     let romanResult = '';
-    console.log(this.basicSymbols)
     for(let i in this.basicSymbols) {
       console.log(`symbol: ${i}`)
       while(arabicNumber >= this.basicSymbols[i]) {
@@ -27,7 +26,6 @@ export class ArabicToRomanService {
         arabicconversor -= this.basicSymbols[i];
       }
     } 
-    console.log('testing....')
     console.log(romanResult)
     return romanResult;
   }
